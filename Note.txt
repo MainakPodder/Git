@@ -23,7 +23,7 @@
     - Pic -> https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
     - It is used to integrating changes from one brach onto another
     - Give a senario : (1st Branch - Local, 2nd Branch - Remote)
-        - Create a repository in GitHub -> Create 4 files -> Commit Push (Both are in same state) -> In local create file6.txt -> Add+Commit (Local is ahead) -> In Remote manually create file8.txt -> Commit+Push (Both are in same state) -> ⭐git fetch origin (To check latest changes in remote) -> No file8 as in commit -> ⭐git rebase origin/main -> file8 will be there -> git log (Commit will be added)
+        - Create a repository in GitHub -> Create 4 files -> Commit Push (Both are in same state) -> In local create file6.txt -> Add+Commit (Local is ahead) -> In Remote manually create file8.txt -> Add+Commit+Push -> ⭐git fetch origin (To check latest changes in remote) -> No file8.txt as in commit -> ⭐git rebase origin/main -> file8 will be there -> git log (Commit will be added)
     #Command
     - git fetch origin
     - git rebase origin/main
