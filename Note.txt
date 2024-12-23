@@ -1,0 +1,38 @@
+✅Git Fork 
+    - Clone -> Creates a local copy of the repository
+            -> Contribute directly to the original repository (If you hav e permission)
+    - Fork -> Creates a copy under your own accout(GitHub)
+           -> Contribute via pull requests to the original repository
+    - How to Fork?
+        - Go to the original repository -> Fork button -> Create fork
+    ⭐mkdir mainak - Used to create folder
+    ⭐type nul > filename.txt - Used to create file
+    ⭐notepad .\file1.txt - Open in notepad 
+    ⭐git remote -v -> used to list the remote repositorie currently configured in your local repository
+    ⭐vim <file-name> 
+        - a -> Insert Mode 
+        - Add changes
+        - esc -> :x -> enter
+    - How to request to accept our changes?
+        - First push the changes (local repository)
+        - Send Pull Request (PR) -> It means showing the code to the owner, and after review the code owner will reject/comment/accept the code
+    - How to raise PR?
+        - Pull requests button -> New pull request buttong -> 2 sections (current branch to target branch) -> ⭐Called PR -> Create pull request button -> ⭐See Marge conflict -> If Able to marge -> Add comment -> Create pull request button -> #...
+    - What if Marge Conflict is there?
+✅Git Rebase
+    - Pic -> https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
+    - It is used to integrating changes from one brach onto another
+    - Give a senario : (1st Branch - Local, 2nd Branch - Remote)
+        - Create a repository in GitHub -> Create 4 files -> Commit Push (Both are in same state) -> In local create file6.txt -> Commit+Push (Local is ahead) -> In Remote manually create file8.txt -> Commit+Push (Both are in same state) -> ⭐git fetch origin (To check latest changes in remote) -> No file8 as in commit -> ⭐git rebase origin/main -> file8 will be there -> git log (Commit will be added)
+    #Command
+    - git fetch origin
+    - git rebase origin/main
+✅Rebase Conflicts (1st Branch - Remote, 2nd Branch - Local)
+    - Create a repository in GitHub -> Create 4 files -> Commit+Push (Both are in same state) -> In remote change file4 manually -> Commite & Push -> Change file4 locally -> Commit+Push -> ⭐git fetch origin -> ⭐git rebase origin/main -> 🔴Marge Conflict -> Go to file4 -> Delete changes -> ⭐git rebase --continue -> git status (🟢No Marge Conflict)
+    #Command
+    - git fetch origin
+    - git rebase origin/main
+    - git rebase --continue
+====================================================================
+👉🏻PW Skills Tech - https://youtu.be/e0rl2PetMIY?si=XIIYZL3oM783h7M7            
+====================================================================
