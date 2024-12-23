@@ -28,7 +28,7 @@
     - git fetch origin
     - git rebase origin/main
 ✅Rebase Conflicts (1st Branch - Remote, 2nd Branch - Local)
-    - Create a repository in GitHub -> Create 4 files -> Commit+Push (Both are in same state) -> In remote change file4 manually -> Commite & Push -> Change file4 locally -> Commit+Push -> ⭐git fetch origin -> ⭐git rebase origin/main -> 🔴Marge Conflict -> Go to file4 -> Delete changes -> ⭐git rebase --continue -> git status (🟢No Marge Conflict)
+    - Create a repository in GitHub -> Create 4 files -> Commit+Push (Both are in same state) -> In remote change file4 manually -> Add+Commite+Push -> Change file4 locally -> Commit+Push -> ⭐git fetch origin -> ⭐git rebase origin/main -> 🔴Marge Conflict -> Go to file4 -> Delete changes -> ⭐git rebase --continue -> git status (🟢No Marge Conflict)
     #Command
     - git fetch origin
     - git rebase origin/main
