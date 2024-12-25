@@ -1,5 +1,63 @@
+✅Git Branches
+    - Ex : 1)In main branch c1->c2->c3(Prod), 
+           2)After c3-> You write code for a new feature (Incomplete), 
+           3)Now In production some bugs has come
+           4)🔴Undo all changes and fix the code (Wrong strategy)
+           5)🟢We should have created a branch
+    - Master/Main brunch is the default branch
+    - HEAD like a pointer which points the current branch
+    - Usecase : 1)I have joined a start up company ans assigned for 2 features (Independent code)
+                2)After main branch, create branch1 for feature1
+                3)After main branch, create branch2 for feature2
+    - ⭐git branch -> List me all the branch and * -> current branch
+    - ⭐git branch <new_branch_name> -> Create a new branch
+    - ⭐git checkout <branch_name> -> Go and checkout the new branch
+    - ⭐git checkout -b <new_branch_name> -> Create + Checkout
+    - ⭐git branch -m <rename_branch_name> -> Rename the current branch name
+    - The branch you are currently checkedout cannot be deleted
+    - https://youtu.be/e0rl2PetMIY?si=dPCJHDqEObv-gho8&t=4006
+✅Git Stash
+    - Ex : 1)Some code which is incomplete so that cant commit
+           2)Some code is on prod so go to the main branch 
+           3)🔴Have to undo all the changes and go back to the main branch
+           4)🟢We can temporarily save the code and go back
+    - Create a new brach -> ls -> change file1.txt -> git status -> ⭐I dont want to commit, want to save the code -> git add. -> git stash
+        - git status -> Code will be saved, so nothing to commit 
+        - ⭐Stash is like commit but not actually commit, when we dont want to commit but also want to save
+    - change file2.txt -> git add . -> git commit -m "change file2.txt" -> ⭐cat file1.txt (Linux Command, Get file1.txt content) -> None
+    - ⭐git stash apply -> Bring back the saved code -> file1.txt modified
+✅Git Merge 
+    - What, Why
+    - ⭐git marge <branch_name>
+    - https://youtu.be/e0rl2PetMIY?si=ylRZ7CPiOj578JRp&t=4965
+✅Merge Conflict
+    - What is Merge Conflict?
+    - Merge Conflict Example
+    - How to resolve the Merge Conflict?
+    - "Autometic Merge failed;"
+    - Whenever we have Merge Conflict we have to manually address it
+    - What are "<<",">>","=="
+    - Current brach always above the "==" sign 
+    - https://youtu.be/e0rl2PetMIY?si=MD7f8CLSM7RUYF0_&t=5289
+✅Git Remote 
+    - 
+✅Git Clone 
+    - What is git clone?
+    - ⭐git clone <https://...>
+    - ⭐ls
+    - ⭐git remote -v 
+        - Ex : origin https://... (fetch)
+        - It is saying "I am connected to remote repository"
+        - And the connection name is origin
+    - When we clone a repository then what it will automatically come up with ?
+        - 1) Entire codebase 
+        - 2) Git initialized  
+        - 3) Commit history
+    #Command
+    - git clone <https://...>
+    - ls 
 ✅Git Fork 
-    - Clone -> Creates a local copy of the repository
+    - Clone -> Creates a local copy of the remote repository
             -> Contribute directly to the original repository (If you hav e permission)
     - Fork -> Creates a copy under your own accout(GitHub)
            -> Contribute via pull requests to the original repository
@@ -21,7 +79,7 @@
     - What if Marge Conflict is there?
 ✅Git Rebase
     - Pic -> https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
-    - It is used to integrating changes from one brach onto another
+    - It is used to integrating changes from one branch onto another
     - Give a senario : (1st Branch - Local, 2nd Branch - Remote)
         - Create a repository in GitHub -> Create 4 files -> Commit Push (Both are in same state) -> In local create file6.txt -> Add+Commit (Local is ahead) -> In Remote manually create file8.txt -> Add+Commit+Push -> ⭐git fetch origin (To check latest changes in remote) -> No file8.txt as in commit -> ⭐git rebase origin/main -> file8 will be there -> git log (Commit will be added)
     #Command
